@@ -46,6 +46,9 @@ public class Kruskal {
                 dsu.union(e.u, e.v);
                 mstEdges.add(e);
                 totalWeight += e.weight;
+                if (mstEdges.size() == graph.n - 1) {
+                    break;
+                }
             }
         }
 
